@@ -1,0 +1,31 @@
+hash-format = "sha256"
+
+[[files]]
+file = "mods/curios.pw.toml"
+hash = "2cc190d77e1f3f9f778dd7f4ddfe8c27cd649d6d655b71b65e5cbd30e3f2a136"
+metafile = true
+
+[[files]]
+file = "mods/e4mc.pw.toml"
+hash = "091422a20bf3b3273249de15e81a51f9f824ff97de3aab34cf1cc25e399629c4"
+metafile = true
+
+[[files]]
+file = "mods/geckolib.pw.toml"
+hash = "3d85ad1cb7b49b42197ebc56bc2352df429909c9ae8753d0fcbb465eed5f4fd5"
+metafile = true
+
+[[files]]
+file = "mods/ratsmischief.pw.toml"
+hash = "ca0e31f0931c2c3fae464944dd6120cca6003d51099ac833a1d9a48d7b8e675d"
+metafile = true
+
+[[files]]
+file = "mods/sharedworld.pw.toml"
+hash = "d83049c70a6b7186da13268c851d1658cb586618de84bb03a6c00d2174d3939b"
+metafile = true
+
+[[files]]
+file = "mods/voicechat.pw.toml"
+hash = "936874190fce78dc8c10731ea77b34ad43f062e3bc4b05baa5f42ba712f15181"
+metafile = true

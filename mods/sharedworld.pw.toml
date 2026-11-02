@@ -1,0 +1,8 @@
+name = "SharedWorld"
+filename = "sharedworld-0.5.4+mc1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/nnhOq92z/versions/dyZU2M9Q/sharedworld-0.5.4%2Bmc1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "db0674197732d08a5529ce45053c02a9b89c3a7d9ab5e84df29223fc4beb97216b6549c3a13ee9c361959a32913ed4c3756165e80eb659d17eaf9a25b313c1b4"
