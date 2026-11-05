@@ -1,11 +1,11 @@
 name = "Rift SMP"
-version = "2.1.3-neoforge.13"
+version = "2.1.3-neoforge.14"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "ba47c57c7ba33779fa50d3e624a669605de14ef8148d6fa1ae200558b7a39592"
+hash = "cd3dee972badb1254fa54d326f7a51010040ebc35f2c2910b299ce1d0032dfe9"
 
 [versions]
 minecraft = "1.21.1"
