@@ -1,8 +1,8 @@
 name = "RAT's Mischief"
-filename = "ratsmischief-2.1.3-neoforge.31.jar"
+filename = "ratsmischief-2.1.3-neoforge.32.jar"
 side = "both"
 
 [download]
-url = "https://raw.githubusercontent.com/Honored-one13/rift-smp/main/files/ratsmischief-2.1.3-neoforge.31.jar"
+url = "https://raw.githubusercontent.com/Honored-one13/rift-smp/main/files/ratsmischief-2.1.3-neoforge.32.jar"
 hash-format = "sha256"
-hash = "006793b0e2cd03eb88512af9436bbcb3d3656d930c47db5debd22747e0ec9864"
+hash = "aaa459894ecb585cc5d338d41ebcf996f004d5d10b22f228e3340f4cd246cbf4"
