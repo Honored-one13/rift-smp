@@ -1,6 +1,11 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/aeronautics.pw.toml"
+hash = "5b69abd3403835a5414fe7567831ec78aa6b35aaa35a146119a862879cc6bebe"
+metafile = true
+
+[[files]]
 file = "mods/almanac.pw.toml"
 hash = "0a97ad9e1cab1b266ad0f8046d0ba505eb7dd8a95acf110d158cdc0d1dc9d28e"
 metafile = true
@@ -8,6 +13,11 @@ metafile = true
 [[files]]
 file = "mods/clumps.pw.toml"
 hash = "15d3f7d2fb4e0f07d665e7ff9a22210a6ad3455ca405e2df3703bc0718d1dc01"
+metafile = true
+
+[[files]]
+file = "mods/create.pw.toml"
+hash = "c01ac601108dfffe1f7e15196f4b8d38877c6f3989907a535d27dd18470e53f6"
 metafile = true
 
 [[files]]
@@ -62,7 +72,12 @@ metafile = true
 
 [[files]]
 file = "mods/ratsmischief.pw.toml"
-hash = "0064c18beb5b35b2aa92dc3113177dd4e523eafb57eb01da5f492e854d46a949"
+hash = "643762715d8add1122082997d3514ef00fa6cdad26e373bb76da7ce02b454070"
+metafile = true
+
+[[files]]
+file = "mods/sable.pw.toml"
+hash = "53795be4070577ea9b20dd2815365cc5d2f88beb5a7914478207503a88505b54"
 metafile = true
 
 [[files]]
