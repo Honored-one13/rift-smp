@@ -141,6 +141,11 @@ hash = "6c2ef31dbd0fa614ae31ef459d88ce92b6d7e34258e2fa35c10af9860c26c3b5"
 metafile = true
 
 [[files]]
+file = "mods/playfulmassacre.pw.toml"
+hash = "efa9af3221a043482fb41c634df3739f1c129d49bf9c5b91dd8abac60318ecd8"
+metafile = true
+
+[[files]]
 file = "mods/ratsmischief.pw.toml"
 hash = "62e8074acdf18537917b616b8a8f890fef57079c00bfd9c10d10a323b01ec06d"
 metafile = true
