@@ -92,7 +92,15 @@ foreach ($mod in $ModProjects) {
         Push-Location $mod.Dir
         try {
             & .\gradlew.bat build --console=plain
-            if ($LASTEXITCODE -ne 0) { throw "Building $($mod.Name) failed" }
+            if ($LASTEXITCODE -ne 0) {
+                # OneDrive sometimes locks old build outputs ("Failed to clean up stale outputs"): clear them and retry once.
+                Write-Host '  build failed, clearing build outputs and retrying...' -ForegroundColor Yellow
+                foreach ($d in 'build\resources', 'build\generated\sources\modMetadata', 'build\libs') {
+                    if (Test-Path $d) { Remove-Item -Recurse -Force $d -ErrorAction SilentlyContinue }
+                }
+                & .\gradlew.bat build --console=plain
+                if ($LASTEXITCODE -ne 0) { throw "Building $($mod.Name) failed" }
+            }
         } finally { Pop-Location }
     }
     $jar = Get-ChildItem (Join-Path $mod.Dir "build\libs\$($mod.Name)-*.jar") -ErrorAction SilentlyContinue |
@@ -179,15 +187,15 @@ if (-not $Version) {
     $vm = [regex]::Match($currentVersion, '^(.*?)(\d+)$')
     $Version = if ($vm.Success) { $vm.Groups[1].Value + ([int]$vm.Groups[2].Value + 1) } else { "$currentVersion.1" }
 }
-Write-Lf $packPath ([regex]::Replace($pack, '(?m)^version = ".*"', "version = `"$Version`""))
-
-Write-Step "Changes in $Version"
+Write-Step "Changes for $Version"
 & $Git -C $Repo status --short -- @PackPaths
 
 if ($NoPush) {
-    Write-Step 'Checked only (-NoPush): nothing was committed or pushed.'
+    Write-Step "Checked only (-NoPush): would publish as $Version. Nothing was committed or pushed."
     exit 0
 }
+
+Write-Lf $packPath ([regex]::Replace($pack, '(?m)^version = ".*"', "version = `"$Version`""))
 
 Write-Step "Publishing $Version"
 Invoke-Git add -A -- @PackPaths
