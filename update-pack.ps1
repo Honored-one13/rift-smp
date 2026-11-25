@@ -20,7 +20,7 @@ $Repo = $PSScriptRoot
 $RawBase = 'https://raw.githubusercontent.com/Honored-one13/rift-smp/main/'
 $Utf8 = New-Object System.Text.UTF8Encoding $false
 # Mod projects that live next to this folder and get built + shipped by this script.
-$ModProjects = @(@{ Name = 'playfulmassacre'; Dir = Join-Path (Split-Path $Repo) 'playful-massacre' })
+$ModProjects = @()
 # Folders whose files go into index.toml (besides mods/*.pw.toml).
 $IndexedDirs = @('config', 'resourcepacks', 'shaderpacks', 'defaultconfigs', 'kubejs')
 

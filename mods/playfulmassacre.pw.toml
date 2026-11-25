@@ -1,8 +1,0 @@
-name = "Playful Massacre"
-filename = "playfulmassacre-1.2.0.jar"
-side = "both"
-
-[download]
-url = "https://raw.githubusercontent.com/Honored-one13/rift-smp/main/files/playfulmassacre-1.2.0.jar"
-hash-format = "sha256"
-hash = "0a11c4bb24ba3603553f51fbcfa1d88fb8aa9dcc273c508804e4017a7f7c72f0"
