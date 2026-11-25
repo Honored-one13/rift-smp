@@ -142,7 +142,7 @@ metafile = true
 
 [[files]]
 file = "mods/ratsmischief.pw.toml"
-hash = "62e8074acdf18537917b616b8a8f890fef57079c00bfd9c10d10a323b01ec06d"
+hash = "104d5a6e8ace8e5867eb103dcfff48e963e4c6dcf9d7e821445ee75d473fad9d"
 metafile = true
 
 [[files]]
@@ -227,5 +227,5 @@ metafile = true
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
-hash = "6779a570710921108d142e01541a127a32fd1e1e64e0f461bb47819b8c44148b"
+hash = "66f519e301f0d24d43074f9889798fb62a19ce5b37e4be827525d7998f8884b1"
 preserve = true
